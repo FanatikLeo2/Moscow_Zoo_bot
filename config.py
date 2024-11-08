@@ -1,5 +1,5 @@
 
-TOKEN = 'YOUR_TOKEN'
+TOKEN = 'Your token'
 
 help_list = f'/start - Запуска бота\n' \
             f'/help - Список команд\n' \

@@ -44,7 +44,7 @@ def quiz_questions(message):
         if current_index != len(question_list):
             current_question = question_list[current_index]
 
-            keyboard = telebot.types.InlineKeyboardMarkup()
+            keyboard = telebot.types.ReplyKeyboardMarkup(resize_keyboard=True)
             for i in range(0, len(config.quiz[current_question]), 2):
                 if i + 1 < len(config.quiz[current_question]):
                     keyboard.add(telebot.types.KeyboardButton(config.quiz[current_question][i]),
